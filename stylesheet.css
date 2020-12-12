@@ -1,11 +1,40 @@
-* {
-    outline: 1px #54D6E3;
+/* * {
+    outline: 1px black solid;
+} */
+
+body {
+    background-color: #C3B59F;
+}
+
+h1 {
+    background-color: #4A6670;
+    outline: 3px black solid;
+}
+
+.nobullets {
+    list-style-type: none;
 }
 
 h2 {
     margin: 55px;
+    background-color: #4A6670;
+    outline: 3px black solid;
 }
 
 p {
-    padding 20px;
+    background-color: #A0AF84;
+    padding: 20px;
+    text-emphasis: italic;
+}
+
+.background-cakes {
+    background-color: #668F80;
+}
+
+img {
+    padding: 50px;
+}
+
+footer {
+    background-color: #D6A2AD;
 }
