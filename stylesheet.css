@@ -33,11 +33,11 @@ p {
 
 img {
     padding: 50px;
-    opacity: 0.5;
+    opacity: 0.5; /* makes image 50% until you hover */
 }
 
 img:hover {
-    opacity: 1.0;
+    opacity: 1.0; /* makes image 100% when hovering */
 }
 
 footer {
