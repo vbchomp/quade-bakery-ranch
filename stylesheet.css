@@ -4,6 +4,7 @@
 
 body {
     background-color: #C3B59F;
+    /* opacity: .3; */
 }
 
 h1 {
@@ -33,11 +34,11 @@ p {
 
 img {
     padding: 50px;
-    opacity: 0.5; /* makes image 50% until you hover */
+    opacity: 1.0; /* makes image 100% until you hover */
 }
 
 img:hover {
-    opacity: 1.0; /* makes image 100% when hovering */
+    opacity: 0.5; /* makes image 50% when hovering */
 }
 
 footer {
