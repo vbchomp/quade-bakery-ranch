@@ -12,10 +12,21 @@ h1 {
     /* outline: 3px black solid; */
     border: 3px black solid;
     border-radius: 10px;
+    /* max-width: 100%; still figuring this one out */
 }
 
 .nobullets {
     list-style-type: none;
+}
+
+ul {
+    position: sticky;
+    top: 0;
+}
+
+li {
+    display: inline;
+    /* float: left; */
 }
 
 h2 {
