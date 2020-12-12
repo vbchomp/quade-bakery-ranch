@@ -1,3 +1,11 @@
 * {
-    outline: 1px black solid;
+    outline: 1px #54D6E3;
+}
+
+h2 {
+    margin: 55px;
+}
+
+p {
+    padding 20px;
 }
