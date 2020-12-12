@@ -61,3 +61,13 @@ img:hover {
 footer {
     background-color: #D6A2AD;
 }
+
+section:after {
+    margin-top: lrem;
+    content: "";
+}
+
+img {
+    float: left;
+
+}
