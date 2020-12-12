@@ -9,7 +9,9 @@ body {
 
 h1 {
     background-color: #4A6670;
-    outline: 3px black solid;
+    /* outline: 3px black solid; */
+    border: 3px black solid;
+    border-radius: 10px;
 }
 
 .nobullets {
@@ -19,13 +21,17 @@ h1 {
 h2 {
     margin: 55px;
     background-color: #4A6670;
-    outline: 3px black solid;
+    /* outline: 3px black solid; */
+    border: 3px black solid;
+    border-radius: 10px;
 }
 
 p {
     background-color: #A0AF84;
     padding: 20px;
     text-emphasis: italic;
+    border: 3px black solid;
+    border-radius: 10px;
 }
 
 .background-cakes {
