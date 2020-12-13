@@ -67,8 +67,3 @@ section:after {
     margin-top: lrem;
     content: "";
 }
-
-img {
-    float: left;
-
-}
