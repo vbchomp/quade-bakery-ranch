@@ -51,7 +51,7 @@ p {
 }
 
 img {
-    padding: 50px;
+    /* padding: 50px; */
     opacity: 1.0; /* makes image 100% until you hover */
 }
 
