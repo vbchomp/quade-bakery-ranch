@@ -62,6 +62,11 @@ section {
     margin: auto;
 }
 
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
 footer {
     background-color: #D6A2AD;
 }
