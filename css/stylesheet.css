@@ -58,6 +58,10 @@ img:hover {
     opacity: 0.5; /* makes image 50% when hovering */
 }
 
+section {
+    margin: auto;
+}
+
 footer {
     background-color: #D6A2AD;
 }
