@@ -39,3 +39,10 @@ alert(alertMessage);
 
 /* Calling area function */
 areaFunction();
+
+
+/* Say Hi function */
+function sayHi() {
+    document.write ("Hi! How are you?")
+}
+sayHi();
