@@ -127,9 +127,15 @@ document.write("")
 addCakes();
 
 var typeCakes = inputPrompt("What type of cake do you want? Choose wedding, graduation or crazy.");
-var wedding = 2;
-var graduation = 5;
-var crazy = 10;
+var cakes = ["wedding", "graduation", "crazy"];
+var i;
+for (i of cakes) {
+    document.write(i + "<br >");
+}
+
+// var wedding = 2;
+// var graduation = 5;
+// var crazy = 10;
 
 // Trying to get my loop to add the number of cakes in variables above based on what the user input.
 for (var i = 0; i < typeCakes; i++) {
