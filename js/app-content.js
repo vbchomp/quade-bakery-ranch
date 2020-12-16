@@ -3,13 +3,13 @@ var cupcake = "Good Morning, Cupcake!";
 console.log(cupcake);
 
 /* Function that asks if you want to chat*/
-function promptChat() {
+function promptHelp() {
     var promptHelp = "Would you like to chat?";
     var response = prompt(promptHelp);
     console.log(response);
   
     var alertMessage;
-        if (response === "Yes") {
+        if (response.toLowerCase() == "Yes") {
         alertMessage = "I'm still learning Web Development. Please hold until I can figure out a response.";
         } else {
         alertMessage = "Good thing you are not holding your breath!";
@@ -18,11 +18,11 @@ alert(alertMessage);
 }
 
 /* Calling Chat function */
-promptChat();
+promptHelp();
 
 
 /* Function to determine the area */
-function areaFunction(); {
+function areaFunction() {
     var length;
     var width;
     var lengthPrompt = "Enter length";
