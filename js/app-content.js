@@ -120,7 +120,9 @@ function addCakes(type, description) {
     } else {
         description = "10 crazy cakes it is!";
     }
-} document.write("")
+} 
+// work on this one tomorrow
+document.write("")
 
 addCakes();
 
@@ -129,7 +131,8 @@ var wedding = 2;
 var graduation = 5;
 var crazy = 10;
 
+// Trying to get my loop to add the number of cakes in variables above based on what the user input.
 for (var i = 0; i < typeCakes; i++) {
     console.log(i);
-    addCakes()
+    addCakes(typeCakes, description);
 }
