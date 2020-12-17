@@ -10,7 +10,8 @@ function enterPassword() {
         var userPassword = prompt("Please enter your password");
     } while(userPassword !== myPassword);
 }
-//enterPassword();
+
+// enterPassword();
 
 document.write("<br>");
 document.write("<br>");
@@ -43,7 +44,7 @@ alert(alertMessage);
 }
 
 /* Calling Chat function */
-promptHelp();
+// promptHelp();
 
 
 /* Function to order cakes */
@@ -65,7 +66,7 @@ function orderCakes() {
     cakeCakes();   
 }
 // Call the order cakes function
-orderCakes();
+// orderCakes();
 
 
 // /* Function to determine the area */
@@ -100,9 +101,9 @@ document.write("<br>");
 document.write("<br>");
 
 /* function to call prompt */
-var userInput;
 function inputPrompt(message) {
     var userInput = prompt(message);
+
     return userInput;
 }
 
@@ -112,7 +113,10 @@ function inputPrompt(message) {
 graduation ad 5 cakes
 crazy add 10 crazy cakes */
 
-function addCakes(type, description) {
+function addCakes(type) {
+
+    var description;
+    
     if (type === "wedding") {
         description = "2 cakes for you and your groom!";
     } else if (type === "graduation") {
@@ -120,15 +124,20 @@ function addCakes(type, description) {
     } else {
         description = "10 crazy cakes it is!";
     }
+
+    var HTML = "<img src=\"images/" + type + ".JPG\">";
+
+    // document.write(type + " " + description);
+    document.write(HTML);
 } 
 // work on this one tomorrow
-document.write(type, description);
+// document.write(type, description);
 
-addCakes(userInput);
+// addCakes(foo);
 
-var typeCakes = inputPrompt("What type of cake do you want? Choose wedding, graduation or crazy.");
-var cakes = ["wedding", "graduation", "crazy"];
-var i;
+// var typeCakes = inputPrompt("What type of cake do you want? Choose wedding, graduation or crazy.");
+// var cakes = ["wedding", "graduation", "crazy"];
+// var i;
 //for (i of typeCakes) {
 //    document.write("<img src="images/Simple_Wed.JPG" class="responsive" alt="Wedding Cake with flowers">");
 //}
@@ -137,9 +146,30 @@ var i;
 // var graduation = 5;
 // var crazy = 10;
 
+var userInputTypeOfCake = inputPrompt("What type of cake do you want? Choose wedding, graduation or crazy.");
+// var numberOfCakes = inputPrompt("How many cakes would you like?");
+
+var numberOfCakes; //create the variable
+
+//dynamically set value of variable
+if(userInputTypeOfCake === "wedding"){
+    numberOfCakes = 5;
+}else if(userInputTypeOfCake === "graduation"){
+    numberOfCakes = 10;
+}else{
+    numberOfCakes = 7;
+}
+
 // Trying to get my loop to add the number of cakes in variables above based on what the user input.
 // Declare index variable i, loop condition (what loop asks itself), index incrementer
-for (var i = 0; i < typeCakes; i++) {
-    console.log(i);
-    addCakes(typeCakes, description);
+// for (var i = 0; i < numberOfCakes; i++) {
+//     // console.log(i);
+//     addCakes(userInputTypeOfCake);
+// }
+
+var a = 42;
+var b = '42';
+
+if(a == b){
+    console.log("THIS IS TRUE");
 }
