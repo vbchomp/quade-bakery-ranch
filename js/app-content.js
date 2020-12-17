@@ -1,4 +1,3 @@
-/* JS #1 */
 /*var cupcake = "Good Morning, Cupcake!";
 console.log(cupcake); */
 
@@ -10,7 +9,7 @@ function enterPassword() {
         var userPassword = prompt("Please enter your password");
     } while(userPassword !== myPassword);
 }
-//enterPassword();
+enterPassword();
 
 document.write("<br>");
 document.write("<br>");
@@ -25,7 +24,6 @@ document.write("<br>");
 //         document.write(i);
 //     }
 // }
-
 
 /* Function that asks if you want to chat*/
 function promptHelp() {
@@ -44,7 +42,6 @@ alert(alertMessage);
 
 /* Calling Chat function */
 promptHelp();
-
 
 /* Function to order cakes */
 function orderCakes() {
@@ -66,7 +63,6 @@ function orderCakes() {
 }
 // Call the order cakes function
 orderCakes();
-
 
 // /* Function to determine the area */
 // function areaFunction() {
@@ -100,7 +96,7 @@ document.write("<br>");
 document.write("<br>");
 
 /* function to call prompt */
-var userInput;
+// var userInput;
 function inputPrompt(message) {
     var userInput = prompt(message);
     return userInput;
@@ -112,23 +108,53 @@ function inputPrompt(message) {
 graduation ad 5 cakes
 crazy add 10 crazy cakes */
 
-function addCakes(type, description) {
+function addCakes(type) {
+    // declare description as variable
+    var description;
+    // evaluate type in if else
     if (type === "wedding") {
         description = "2 cakes for you and your groom!";
     } else if (type === "graduation") {
         description = "5 cakes for your graduation party!"; 
-    } else {
+    } else if (type === "crazy") {
         description = "10 crazy cakes it is!";
-    }
-} 
-// work on this one tomorrow
-document.write(type, description);
+    } 
 
-addCakes(userInput);
+    var htmlImage = "<img src=\"images/" + type + ".JPG\" class=\"responsive\">";
+    document.write(htmlImage);
+    document.write("<br>");
+//     //document.write("<section> \
+//                     <h2>" + type + "cakes" + "</h2> \
+//                     <img src=\"images/" + type + ".JPG\"> \
+//                     </section>");
+} 
+                //<p>" + description ".</p> \
+                // work on this one tomorrow
+//document.write(type, description);
+
+//addCakes(userInput);
 
 var typeCakes = inputPrompt("What type of cake do you want? Choose wedding, graduation or crazy.");
-var cakes = ["wedding", "graduation", "crazy"];
-var i;
+// var cakes = ["wedding", "graduation", "crazy"];
+var numberOfCakes;
+
+if(typeCakes === "wedding") {
+    numberOfCakes = 2;
+}else if (typeCakes === "graduation") {
+    numberOfCakes = 5;
+}else if (typeCakes === "crazy") {
+    numberOfCakes = 10;
+}else{
+    numberOfCakes = 15;
+}  
+
+for (var i = 0; i < numberOfCakes; i++) {
+    // console.log(i);   
+    // typeCakes stores the value of the inputPrompt function outside of the function 
+    addCakes(typeCakes);
+}
+
+    //var i;
 //for (i of typeCakes) {
 //    document.write("<img src="images/Simple_Wed.JPG" class="responsive" alt="Wedding Cake with flowers">");
 //}
@@ -139,7 +165,7 @@ var i;
 
 // Trying to get my loop to add the number of cakes in variables above based on what the user input.
 // Declare index variable i, loop condition (what loop asks itself), index incrementer
-for (var i = 0; i < typeCakes; i++) {
-    console.log(i);
-    addCakes(typeCakes, description);
-}
+// for (var i = 0; i < typeCakes; i++) {
+//     console.log(i);
+//     addCakes(typeCakes, description);
+// }
